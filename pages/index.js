@@ -160,8 +160,8 @@ export default function App(props) {
   const { data, loading, error, refetch } = useQuery(QUERY, {
     variables:{
       id: addrs
-    },
-
+    }, 
+    pollInterval: 6000*10,
   });
 
   const onSearch = (value) => {
