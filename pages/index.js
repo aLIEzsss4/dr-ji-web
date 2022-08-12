@@ -71,7 +71,7 @@ const columns = [
     // width: 60,
 
     render: (v, item) => {
-      return (v / 10 ** 18).toFixed(5)
+      return (v / 10 ** 18).toFixed(3)
     }
 
   },
@@ -83,7 +83,7 @@ const columns = [
     align: 'right',
     // width: 80,
     render: (v, item) => {
-      return (v / 10 ** 18).toFixed(5) 
+      return (v / 10 ** 18).toFixed(3) 
     }
   },
   {
@@ -93,7 +93,7 @@ const columns = [
     align: 'right',
     // width: 80,
     render: (v, item) => {
-      return (v / 10 ** 18) * 0.9.toFixed(5)
+      return (v / 10 ** 18* 0.9) .toFixed(3)
     }
   },
 
@@ -104,7 +104,7 @@ const columns = [
     align: 'right',
     // width: 80,
     render: (v, item) => {
-      return (v / 10 ** 13).toFixed(5)
+      return (v / 10 ** 13).toFixed(3)
     }
   },
   {
@@ -114,7 +114,7 @@ const columns = [
     align: 'right',
     // width: 80,
     render: (v, item) => {
-      return (v / 10 ** 18).toFixed(5)
+      return (v / 10 ** 18).toFixed(3)
     }
   },
   {
@@ -124,7 +124,7 @@ const columns = [
     align: 'right',
     // width: 80,
     render: (v, item) => {
-      return ((item.totalExpense - (item.totalIncome) * 0.9 - item.totalGas) / 10 ** 18).toFixed(5)
+      return (((item.totalIncome) * 0.9 - item.totalExpense - item.totalGas) / 10 ** 18).toFixed(3)
     }
   },
 
