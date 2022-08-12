@@ -48,6 +48,8 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: #0070f3;
+
 }
 
 .title,
@@ -76,6 +78,7 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
+
 }
 
 .card {
